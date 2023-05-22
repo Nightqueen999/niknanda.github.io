@@ -1,0 +1,525 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Halaman User</title>
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+           <div class="text-center d-block" style ="max-width :150px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img class = "img-fluid mx-auto d-block " src="../../Assets/Logo.png"  alt="">
+        </a>
+        </div>
+
+    </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+          <a class="ms-3 navbar-brand d-flex align-items-center" href="halaman_user.php">
+            <img class = "img-fluid mx-auto d-block " style="max-width:60px;" src="../../Assets/Logonotext.png"  alt="">
+            <strong class="ms-2">Book Eccomerce</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3 ">
+                <a class="nav-link active text" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">Buku</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">Support</a>
+              </li>
+            </ul>
+            <div class="dropdown me-5 ms-1">
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle ms-2" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../../Assets/Logo/account.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                  <strong>User</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../PHP_login/logout.php">Sign out</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+<div class="container py-3 d-flex justify-content-center">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width:80%;">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../assets/promosi3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/promosi2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/promosi3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container align-items-center text-center mt-5" >
+        <h1 class="mt-n5"><strong>Produk Terbaru</strong></h1>
+
+        <div class="row mx-auto justify-content-center">
+            <div class="card m-2" style="width: 20rem;">
+                <img src="/assets/Contoh Foto Buku/9786020649320_the_midnight_library_cov.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Midnight Library</h5>
+                <h6 class="card-text nav-link">Matt Haig</h6>
+                <p class="nav-link-disabled">RP.150.000</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohmodal1">Selengkapnya</button>
+                <div class="modal fade" id="contohmodal1" role="dialog" aria-labelledby="modallabel1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header text-center ">
+                        <h4><strong>Detail Buku</strong></h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <img src="/assets/Contoh Foto Buku/9786020649320_the_midnight_library_cov.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col-lg-7  mt-3">
+                            <table class="table table-borderless"> 
+                              <tbody><tr>
+                                <th>Nama Produk</th>
+                                <td>Midnight Library</td>
+                              </tr>
+                              <tr>
+                                <th>Genre</th>
+                                <td>Fiction</td>
+                                </tr><tr>
+                                  <th>Penulis</th>
+                                  <td>Matt Haig</td>
+                                  </tr><tr>
+                                    <th>Rating Produk</th>
+                                    <td>
+                                      <i class="fas fa-star text-warning"></i>
+                                      <i class="fas fa-star text-warning"></i>
+                                      <i class="fas fa-star text-warning"></i>
+                                      <i class="fas fa-star text-warning"></i>
+                                      <i class="fas fa-star-half-alt text-warning"></i> <br>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>Stok Produk</th>
+                                    <td>20 Buku</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Harga</th>
+                                    <td>Rp. 150.000</td>
+                                  </tr>
+                          </tbody></table>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Kembali</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">Beli</a>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 20rem;">
+              <img src="/assets/Contoh Foto Buku/10 Minute Presentation.png" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">10 Minute Presentation</h5>
+              <h6 class="card-text nav-link">Matt Haig</h6>
+              <p class="nav-link-disabled">RP.100.000</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohmodal2">Selengkapnya</button>
+              <div class="modal fade" id="contohmodal2" role="dialog" aria-labelledby="modallabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center ">
+                      <h4><strong>Detail Buku</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <img src="/assets/Contoh Foto Buku/10 Minute Presentation.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="col-lg-7  mt-3">
+                          <table class="table table-borderless"> 
+                            <tbody><tr>
+                              <th>Nama Produk</th>
+                              <td>10 Minute Presentation</td>
+                            </tr>
+                            <tr>
+                              <th>Genre</th>
+                              <td>Self-Improvement</td>
+                              </tr><tr>
+                                <th>Penulis</th>
+                                <td>Matt Haig</td>
+                                </tr><tr>
+                                  <th>Rating Produk</th>
+                                  <td>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i> <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>Stok Produk</th>
+                                  <td>30 Buku</td>
+                                </tr>
+                                <tr>
+                                  <th>Harga</th>
+                                  <td>Rp. 100.000</td>
+                                </tr>
+                        </tbody></table>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Kembali</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary">Beli</a>
+              </div>
+            </div>
+
+            <div class="card m-2" style="width: 20rem;">
+            <img src="/assets/Contoh Foto Buku/Atomic Habits.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Atomic Habits</h5>
+            <h6 class="card-text nav-link">James Clear</h6>
+            <p class="nav-link-disabled">RP.110.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohmodal3">Selengkapnya</button>
+            <div class="modal fade" id="contohmodal3" role="dialog" aria-labelledby="modallabel3" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center ">
+                    <h4><strong>Detail Buku</strong></h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <img src="/assets/Contoh Foto Buku/Atomic Habits.jpg" class="card-img-top" alt="...">
+                      </div>
+                      <div class="col-lg-7  mt-3">
+                        <table class="table table-borderless"> 
+                          <tbody><tr>
+                            <th>Nama Produk</th>
+                            <td>Atomic Habits</td>
+                          </tr>
+                          <tr>
+                            <th>Genre</th>
+                            <td>Self-Improvement</td>
+                            </tr><tr>
+                              <th>Penulis</th>
+                              <td>James Clear</td>
+                              </tr><tr>
+                                <th>Rating Produk</th>
+                                <td>
+                                  <i class="fas fa-star text-warning"></i>
+                                  <i class="fas fa-star text-warning"></i>
+                                  <i class="fas fa-star text-warning"></i>
+                                  <i class="fas fa-star text-warning"></i>
+                                  <i class="fas fa-star-half-alt text-warning"></i> <br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th>Stok Produk</th>
+                                <td>25 Buku</td>
+                              </tr>
+                              <tr>
+                                <th>Harga</th>
+                                <td>Rp. 110.000</td>
+                              </tr>
+                      </tbody></table>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Kembali</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+            </div>
+
+            <div class="card m-2" style="width: 20rem;">
+          <img src="/assets/Contoh Foto Buku/3 Minute Role.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">3 Minute Role</h5>
+          <h6 class="card-text nav-link">James Clear</h6>
+          <p class="nav-link-disabled">RP.110.000</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohmodal4">Selengkapnya</button>
+          <div class="modal fade" id="contohmodal4" role="dialog" aria-labelledby="modallabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center ">
+                  <h4><strong>Detail Buku</strong></h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <img src="/assets/Contoh Foto Buku/3 Minute Role.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-lg-7  mt-3">
+                      <table class="table table-borderless"> 
+                        <tbody><tr>
+                          <th>Nama Produk</th>
+                          <td>3 Minute Role</td>
+                        </tr>
+                        <tr>
+                          <th>Genre</th>
+                          <td>Self-Improvement</td>
+                          </tr><tr>
+                            <th>Penulis</th>
+                            <td>Matt Haig</td>
+                            </tr><tr>
+                              <th>Rating Produk</th>
+                              <td>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i> <br>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Stok Produk</th>
+                              <td>35 Buku</td>
+                            </tr>
+                            <tr>
+                              <th>Harga</th>
+                              <td>Rp. 110.000</td>
+                            </tr>
+                    </tbody></table>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Kembali</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Beli</a>
+          </div>
+            </div>
+
+            <div class="card m-2" style="width: 20rem;">
+        <img src="/assets/Contoh Foto Buku/Pemrograman C++.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Pemrograman C++</h5>
+        <h6 class="card-text nav-link">Budi Raharjo</h6>
+        <p class="nav-link-disabled">RP.250.000</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohmodal5">Selengkapnya</button>
+        <div class="modal fade" id="contohmodal5" role="dialog" aria-labelledby="modallabel5" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center ">
+                <h4><strong>Detail Buku</strong></h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <img src="/assets/Contoh Foto Buku/Pemrograman C++.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-lg-7  mt-3">
+                    <table class="table table-borderless"> 
+                      <tbody><tr>
+                        <th>Nama Produk</th>
+                        <td>Pemrograman C++</td>
+                      </tr>
+                      <tr>
+                        <th>Genre</th>
+                        <td>Education</td>
+                        </tr><tr>
+                          <th>Penulis</th>
+                          <td>Budi Raharjo</td>
+                          </tr><tr>
+                            <th>Rating Produk</th>
+                            <td>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star-half-alt text-warning"></i> <br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Stok Produk</th>
+                            <td>20 Buku</td>
+                          </tr>
+                          <tr>
+                            <th>Harga</th>
+                            <td>Rp. 250.000</td>
+                          </tr>
+                  </tbody></table>
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Kembali</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary">Beli</a>
+        </div>
+            </div>
+
+            <div class="card m-2" style="width: 20rem;">
+      <img src="/assets/Contoh Foto Buku/Funiculi_Funicula_cov.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Funiculi Funicula</h5>
+      <h6 class="card-text nav-link">Toshikazu Kawaguchi</h6>
+      <p class="nav-link-disabled">RP.75.000</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contohmodal6">Selengkapnya</button>
+      <div class="modal fade" id="contohmodal6" role="dialog" aria-labelledby="modallabel6" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center ">
+              <h4><strong>Detail Buku</strong></h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img src="/assets/Contoh Foto Buku/Funiculi_Funicula_cov.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="col-lg-7  mt-3">
+                  <table class="table table-borderless"> 
+                    <tbody><tr>
+                      <th>Nama Produk</th>
+                      <td>Funiculi Funicula</td>
+                    </tr>
+                    <tr>
+                      <th>Genre</th>
+                      <td>Fiction</td>
+                      </tr><tr>
+                        <th>Penulis</th>
+                        <td>Toshikazu Kawaguchi</td>
+                        </tr><tr>
+                          <th>Rating Produk</th>
+                          <td>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i> <br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Stok Produk</th>
+                          <td>20 Buku</td>
+                        </tr>
+                        <tr>
+                          <th>Harga</th>
+                          <td>Rp. 75.000</td>
+                        </tr>
+                </tbody></table>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Kembali</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary">Beli</a>
+      </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer class="bg-dark" height="600px" style="margin-top: 50px;" >
+        <div class="container-fluid">
+            <div class="row text white">
+                <div class="col-md-4 col-xm-12 p-4">
+                    <h6 class="text-primary m-1">Produk Book Eccomerce</h6>
+                    <ul>
+                        <li class="text-white mb-1">Costum Book Cover</li>
+                        <li class="text-white mb-1">Merchandise</li>
+                        <li class="text-white mb-1">Pre-releasse Book</li>
+                        <li class="text-white mb-1">Costum Bookmark</li>
+                    </ul>
+                
+                </div>
+                <div class="col-md-4 col-xm-12 p-4 text-md-center">
+                    <h6 class="text-primary my-1">Tentang Book Eccomerce</h6>
+                    <p class="text-white mb-1">Tentang Kami</p>
+                    <p class="text-white mb-1">Toko Kami</p>
+                    <p class="text-white mb-1">Kerjasama</p>
+                </div>
+                <div class="col-md-4 col-xm-12 p-4 text-md-end">
+                    <h6 class="text-primary my-1">Lainnya</h6>
+                    <p class="text-white mb-1">Kebijakan Privasi</p>
+                    <p class="text-white mb-1">Syarat & Ketentuan</p>
+                    <p class="text-white mb-1">Bantuan</p>
+                    <p class="text-white mb-1">Hubungi Kami</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid bg-primary text-center text-white p-1">
+            <h6>Web by Nik Nanda - Copyright@2023 </h6>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
